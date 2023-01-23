@@ -4,7 +4,7 @@ const CssPage = () => {
   return (
     <main>
       <h1>CSS</h1>
-      <h2>Center with 2 different methods</h2>
+      <h2>Center (X & Y) with 2 different methods</h2>
       <section
         className="Section--grid"
         css={css`
