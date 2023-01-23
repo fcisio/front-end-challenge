@@ -1,7 +1,12 @@
+import { useState } from "react";
 import { css } from "@emotion/react";
 
 const CounterPage = () => {
-  const handleCount = () => {};
+  const [count, setCount] = useState(0);
+
+  const handleCount = (value: number) => {
+    // setCount();
+  };
 
   return (
     <main>
@@ -9,13 +14,9 @@ const CounterPage = () => {
       <h2>Create a counter that has a min. 0 and max. 3</h2>
       <blockquote>
         <p>
-          1. There should also be a counter on the amount of clicks. It&apos;s
-          value will be logged `console.log()` when either of the buttons are
-          clicked.
-          <br />
-          {'For example, clicking on "+", "-", "+" should log: 3'}
+          Then explain how you would go about storing and logging the total
+          clicks amount.
         </p>
-        <p>2. You want to minimize the rerenders</p>
       </blockquote>
       <section
         className="Section--grid"
@@ -24,9 +25,9 @@ const CounterPage = () => {
         `}
       >
         <div css={{ padding: "1rem" }}>
-          <h1>0</h1>
-          <button onClick={() => handleCount()}>+</button>
-          <button onClick={() => handleCount()}>-</button>
+          <h1>{count}</h1>
+          <button onClick={() => handleCount(+1)}>+</button>
+          <button onClick={() => handleCount(-1)}>-</button>
         </div>
       </section>
     </main>

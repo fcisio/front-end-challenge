@@ -4,6 +4,7 @@ const CssPage = () => {
   return (
     <main>
       <h1>CSS</h1>
+
       <h2>Center (X & Y) with 2 different methods</h2>
       <section
         className="Section--grid"
@@ -22,9 +23,9 @@ const CssPage = () => {
         </div>
       </section>
 
-      <h2>Apply the text color the the elements background</h2>
+      <h2>Apply a color on the small boxes background</h2>
       <blockquote>
-        <p>You can only define the color once.</p>
+        <p>You can only define the color once on the container.</p>
       </blockquote>
       <section
         className="Section--grid -centered"
@@ -42,6 +43,26 @@ const CssPage = () => {
         </div>
         <div className="M__02">
           <aside>02</aside>
+        </div>
+      </section>
+
+      <h2>Add gaps of 2rem between the elements</h2>
+      <blockquote>
+        <p>1. You cannot use flex/grid gap propertie</p>
+        <p>
+          2. You cannot use nth-child/first-child/last-child/nth-of-type/...
+        </p>
+        <p>
+          3. There should only be spacing between the elements; not at the start
+          or end.
+        </p>
+      </blockquote>
+      <section className="Section--full" css={css``}>
+        <div className="M">
+          <aside>01</aside>
+          <aside>02</aside>
+          <aside>03</aside>
+          <aside>04</aside>
         </div>
       </section>
 

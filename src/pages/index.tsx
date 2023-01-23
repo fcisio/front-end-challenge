@@ -16,16 +16,19 @@ export default function Home() {
             <Link href="/css">CSS</Link>
           </li>
           <li>
+            <Link href="/fix">Fix this code</Link>
+          </li>
+          <li>
             <Link href="/counter">Counter</Link>
           </li>
           <li>
             <Link href="/data?id=4">Data Fetching</Link>
           </li>
           <li>
-            <Link href="/fix">Fix this code</Link>
+            <Link href="/typescript">Typescript (bonus)</Link>
           </li>
           <li>
-            <Link href="/typescript">Typescript</Link>
+            <Link href="/questions">Questions</Link>
           </li>
         </ol>
       </main>

@@ -44,7 +44,40 @@ export default function App({ Component, pageProps }: AppProps) {
                 position: absolute;
                 top: 50%;
                 left: 50%;
-                transform: translate(-50%);
+                transform: translate(-50%, -50%);
+              }
+            }
+          }
+
+          .Section--full {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            margin-bottom: 6rem;
+            color: white;
+
+            > div {
+              padding: 2rem;
+              display: flex;
+              background-color: white;
+
+              > aside,
+              > div {
+                background-color: black;
+
+                width: fit-content;
+                padding: 1em;
+              }
+            }
+
+            &.-centered > div {
+              position: relative;
+              > aside,
+              > div {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
               }
             }
           }
